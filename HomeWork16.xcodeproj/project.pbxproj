@@ -12,6 +12,21 @@
 		A8AF53732BD0014000A04F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AF53722BD0014000A04F90 /* Assets.xcassets */; };
 		A8AF53762BD0014000A04F90 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A8AF53752BD0014000A04F90 /* Base */; };
 		A8AF537E2BD0027000A04F90 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF537D2BD0027000A04F90 /* OnboardingViewController.swift */; };
+		A8AF53802BD0044200A04F90 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF537F2BD0044200A04F90 /* OnboardingView.swift */; };
+		A8AF53822BD004E600A04F90 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53812BD004E600A04F90 /* OnboardingModel.swift */; };
+		A8AF53842BD0078D00A04F90 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53832BD0078D00A04F90 /* DataLoader.swift */; };
+		A8AF53892BD0159800A04F90 /* expdsdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53882BD0159800A04F90 /* expdsdf.swift */; };
+		A8AF538C2BD0185E00A04F90 /* FlowItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF538B2BD0185E00A04F90 /* FlowItems.swift */; };
+		A8AF538E2BD026D700A04F90 /* OnboardingViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF538D2BD026D700A04F90 /* OnboardingViewController+CollectionView.swift */; };
+		A8AF53912BD0275D00A04F90 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53902BD0275D00A04F90 /* OnboardingCell.swift */; };
+		A8AF53942BD0331200A04F90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53932BD0331200A04F90 /* Constants.swift */; };
+		A8AF53972BD03ED800A04F90 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53962BD03ED800A04F90 /* MainModel.swift */; };
+		A8AF53992BD03F5900A04F90 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53982BD03F5900A04F90 /* MainView.swift */; };
+		A8AF539B2BD03FB600A04F90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF539A2BD03FB600A04F90 /* MainViewController.swift */; };
+		A8AF539E2BD0415900A04F90 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF539D2BD0415900A04F90 /* MainCell.swift */; };
+		A8AF53A02BD041CA00A04F90 /* MainViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF539F2BD041CA00A04F90 /* MainViewController+CollectionView.swift */; };
+		A8AF53A32BD052BC00A04F90 /* MainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53A22BD052BC00A04F90 /* MainItem.swift */; };
+		A8AF53A52BD0549500A04F90 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53A42BD0549500A04F90 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +37,21 @@
 		A8AF53752BD0014000A04F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8AF53772BD0014000A04F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8AF537D2BD0027000A04F90 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		A8AF537F2BD0044200A04F90 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A8AF53812BD004E600A04F90 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		A8AF53832BD0078D00A04F90 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		A8AF53882BD0159800A04F90 /* expdsdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expdsdf.swift; sourceTree = "<group>"; };
+		A8AF538B2BD0185E00A04F90 /* FlowItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowItems.swift; sourceTree = "<group>"; };
+		A8AF538D2BD026D700A04F90 /* OnboardingViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		A8AF53902BD0275D00A04F90 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		A8AF53932BD0331200A04F90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A8AF53962BD03ED800A04F90 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		A8AF53982BD03F5900A04F90 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A8AF539A2BD03FB600A04F90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A8AF539D2BD0415900A04F90 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		A8AF539F2BD041CA00A04F90 /* MainViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		A8AF53A22BD052BC00A04F90 /* MainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItem.swift; sourceTree = "<group>"; };
+		A8AF53A42BD0549500A04F90 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +86,91 @@
 			children = (
 				A8AF53692BD0013F00A04F90 /* AppDelegate.swift */,
 				A8AF536B2BD0013F00A04F90 /* SceneDelegate.swift */,
-				A8AF537D2BD0027000A04F90 /* OnboardingViewController.swift */,
+				A8AF53922BD032FC00A04F90 /* Common */,
+				A8AF53862BD014EF00A04F90 /* Services */,
+				A8AF53852BD014D500A04F90 /* OnboardingScreen */,
+				A8AF53952BD03E5800A04F90 /* MainScreen */,
 				A8AF53722BD0014000A04F90 /* Assets.xcassets */,
 				A8AF53742BD0014000A04F90 /* LaunchScreen.storyboard */,
 				A8AF53772BD0014000A04F90 /* Info.plist */,
 			);
 			path = HomeWork16;
+			sourceTree = "<group>";
+		};
+		A8AF53852BD014D500A04F90 /* OnboardingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF538A2BD0180800A04F90 /* Models */,
+				A8AF538F2BD0273300A04F90 /* Cells */,
+				A8AF53812BD004E600A04F90 /* OnboardingModel.swift */,
+				A8AF537F2BD0044200A04F90 /* OnboardingView.swift */,
+				A8AF53882BD0159800A04F90 /* expdsdf.swift */,
+				A8AF537D2BD0027000A04F90 /* OnboardingViewController.swift */,
+				A8AF538D2BD026D700A04F90 /* OnboardingViewController+CollectionView.swift */,
+			);
+			name = OnboardingScreen;
+			sourceTree = "<group>";
+		};
+		A8AF53862BD014EF00A04F90 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF53832BD0078D00A04F90 /* DataLoader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A8AF538A2BD0180800A04F90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF538B2BD0185E00A04F90 /* FlowItems.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A8AF538F2BD0273300A04F90 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF53902BD0275D00A04F90 /* OnboardingCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		A8AF53922BD032FC00A04F90 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF53932BD0331200A04F90 /* Constants.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		A8AF53952BD03E5800A04F90 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF53A12BD0529600A04F90 /* MainModels */,
+				A8AF539C2BD0411600A04F90 /* MainCells */,
+				A8AF53962BD03ED800A04F90 /* MainModel.swift */,
+				A8AF53982BD03F5900A04F90 /* MainView.swift */,
+				A8AF539A2BD03FB600A04F90 /* MainViewController.swift */,
+				A8AF539F2BD041CA00A04F90 /* MainViewController+CollectionView.swift */,
+				A8AF53A42BD0549500A04F90 /* DetailsViewController.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		A8AF539C2BD0411600A04F90 /* MainCells */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF539D2BD0415900A04F90 /* MainCell.swift */,
+			);
+			name = MainCells;
+			sourceTree = "<group>";
+		};
+		A8AF53A12BD0529600A04F90 /* MainModels */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF53A22BD052BC00A04F90 /* MainItem.swift */,
+			);
+			path = MainModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +244,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8AF536A2BD0013F00A04F90 /* AppDelegate.swift in Sources */,
+				A8AF53992BD03F5900A04F90 /* MainView.swift in Sources */,
+				A8AF53942BD0331200A04F90 /* Constants.swift in Sources */,
+				A8AF53A32BD052BC00A04F90 /* MainItem.swift in Sources */,
+				A8AF53822BD004E600A04F90 /* OnboardingModel.swift in Sources */,
+				A8AF538E2BD026D700A04F90 /* OnboardingViewController+CollectionView.swift in Sources */,
+				A8AF53842BD0078D00A04F90 /* DataLoader.swift in Sources */,
+				A8AF53892BD0159800A04F90 /* expdsdf.swift in Sources */,
+				A8AF539B2BD03FB600A04F90 /* MainViewController.swift in Sources */,
+				A8AF53A52BD0549500A04F90 /* DetailsViewController.swift in Sources */,
+				A8AF53A02BD041CA00A04F90 /* MainViewController+CollectionView.swift in Sources */,
+				A8AF538C2BD0185E00A04F90 /* FlowItems.swift in Sources */,
+				A8AF53912BD0275D00A04F90 /* OnboardingCell.swift in Sources */,
+				A8AF53972BD03ED800A04F90 /* MainModel.swift in Sources */,
+				A8AF53802BD0044200A04F90 /* OnboardingView.swift in Sources */,
 				A8AF537E2BD0027000A04F90 /* OnboardingViewController.swift in Sources */,
 				A8AF536C2BD0013F00A04F90 /* SceneDelegate.swift in Sources */,
+				A8AF539E2BD0415900A04F90 /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
