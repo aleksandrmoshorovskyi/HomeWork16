@@ -28,7 +28,10 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var goButton: UIButton!
     
     @IBAction func goButtonAction(_ sender: Any) {
-        print("hello")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+        //navigationController?.pushViewController(vc, animated: true)
+        navigationController?.setViewControllers([vc], animated: true)
     }
     
     private var onboardingDataSourceOnboarding: [Instruction] = []
@@ -59,12 +62,31 @@ class OnboardingViewController: UIViewController {
 extension OnboardingViewController: UICollectionViewDelegate {
     
     //переробити на інший метод
+    /*
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
         pageControl.currentPage = indexPath.row
 
         if (indexPath.row == 4) {
             print("last")
+            goButton.isHidden = false
+        } else {
+            goButton.isHidden = true
+        }
+    }
+     */
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        //print("scrollViewDidEndDecelerating")
+        
+        //let scrollPosition = scrollView.contentOffset.x / view.frame.width
+        let scrollPosition = scrollView.contentOffset.x / scrollView.bounds.width
+        
+        pageControl.currentPage = Int(round(scrollPosition))
+        
+        if (scrollPosition == 4) {
+            //print("last")
             goButton.isHidden = false
         } else {
             goButton.isHidden = true
@@ -113,3 +135,10 @@ extension OnboardingViewController: UICollectionViewDelegateFlowLayout {
         return .zero
     }
 }
+
+/*
+ func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+     let scrollPosition = scrollView.contentOffset.x / view.frame.width
+     pageIndicator.currentPage = Int( round(scrollPosition) )
+ }
+ */

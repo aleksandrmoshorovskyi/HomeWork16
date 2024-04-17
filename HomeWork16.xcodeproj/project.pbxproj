@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A8AF52F42BCD6B6E00A04F90 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF52F32BCD6B6E00A04F90 /* OnboardingViewController.swift */; };
 		A8AF52FA2BCD73CD00A04F90 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF52F92BCD73CD00A04F90 /* OnboardingCell.swift */; };
+		A8AF53362BCF995D00A04F90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53352BCF995D00A04F90 /* MainViewController.swift */; };
+		A8AF53382BCF9AA600A04F90 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53372BCF9AA600A04F90 /* MainCell.swift */; };
+		A8AF533A2BCFA90500A04F90 /* MainDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF53392BCFA90500A04F90 /* MainDataModel.swift */; };
+		A8AF533C2BCFAA3D00A04F90 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF533B2BCFAA3D00A04F90 /* DetailViewController.swift */; };
 		A8E9D7D02BCD68130095CB91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9D7CF2BCD68130095CB91 /* AppDelegate.swift */; };
 		A8E9D7D22BCD68130095CB91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9D7D12BCD68130095CB91 /* SceneDelegate.swift */; };
 		A8E9D7D72BCD68130095CB91 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A8E9D7D62BCD68130095CB91 /* Base */; };
@@ -19,6 +23,10 @@
 /* Begin PBXFileReference section */
 		A8AF52F32BCD6B6E00A04F90 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A8AF52F92BCD73CD00A04F90 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		A8AF53352BCF995D00A04F90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A8AF53372BCF9AA600A04F90 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		A8AF53392BCFA90500A04F90 /* MainDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataModel.swift; sourceTree = "<group>"; };
+		A8AF533B2BCFAA3D00A04F90 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A8E9D7CC2BCD68130095CB91 /* HomeWork16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E9D7CF2BCD68130095CB91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8E9D7D12BCD68130095CB91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,10 @@
 				A8E9D7D52BCD68130095CB91 /* Main.storyboard */,
 				A8AF52F32BCD6B6E00A04F90 /* OnboardingViewController.swift */,
 				A8AF52F92BCD73CD00A04F90 /* OnboardingCell.swift */,
+				A8AF53392BCFA90500A04F90 /* MainDataModel.swift */,
+				A8AF53352BCF995D00A04F90 /* MainViewController.swift */,
+				A8AF533B2BCFAA3D00A04F90 /* DetailViewController.swift */,
+				A8AF53372BCF9AA600A04F90 /* MainCell.swift */,
 				A8E9D7D82BCD68150095CB91 /* Assets.xcassets */,
 				A8E9D7DA2BCD68150095CB91 /* LaunchScreen.storyboard */,
 				A8E9D7DD2BCD68150095CB91 /* Info.plist */,
@@ -143,8 +155,12 @@
 			files = (
 				A8E9D7D02BCD68130095CB91 /* AppDelegate.swift in Sources */,
 				A8E9D7D22BCD68130095CB91 /* SceneDelegate.swift in Sources */,
+				A8AF533A2BCFA90500A04F90 /* MainDataModel.swift in Sources */,
+				A8AF53382BCF9AA600A04F90 /* MainCell.swift in Sources */,
 				A8AF52FA2BCD73CD00A04F90 /* OnboardingCell.swift in Sources */,
 				A8AF52F42BCD6B6E00A04F90 /* OnboardingViewController.swift in Sources */,
+				A8AF53362BCF995D00A04F90 /* MainViewController.swift in Sources */,
+				A8AF533C2BCFAA3D00A04F90 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
