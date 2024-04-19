@@ -7,24 +7,22 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-    
-    var model: MainModel!
+class MainViewController: BaseViewController {
+ 
+    var dataModel: [MainModel] = []
     var contentView: MainView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .yellow
+        view.backgroundColor = .systemBackground
+        
+        dataModel = DataLoader().getMainData()
         
         setupInitialState()
-        model.loadData()
     }
     
-    private func setupInitialState() {
-        
-        model = MainModel()
-        model.delegate = self
+    func setupInitialState() {
         
         contentView = MainView(frame: view.frame)
         contentView.delegate = self
@@ -33,47 +31,12 @@ class MainViewController: UIViewController {
         contentView.collectionView.delegate = self
         
         view.addSubview(contentView)
-        setupConstraints()
+        
+        setupConstraints(for: contentView)
         
         contentView.collectionView.register(
             MainCell.self,
             forCellWithReuseIdentifier: MainCell.idintifier
         )
     }
-    
-    private func setupConstraints() {
-        
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            // MARK: - contentView Constraints
-            contentView.leadingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: .zero
-            ),
-            contentView.trailingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                constant: .zero
-            ),
-            contentView.topAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.topAnchor,
-                constant: .zero
-            ),
-            contentView.bottomAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.bottomAnchor,
-                constant: .zero
-            )
-        ])
-    }
-}
-
-extension MainViewController: MainModelDelegate {
-    
-    func dataDidLoad() {
-        contentView.collectionView.reloadData()
-    }
-}
-
-extension MainViewController: MainViewDelegate {
-    
 }

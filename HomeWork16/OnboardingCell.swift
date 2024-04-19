@@ -11,138 +11,108 @@ class OnboardingCell: UICollectionViewCell {
     
     static let idintifier = "OnboardingCell"
     
+    lazy var backView: UIView = {
+        
+        let view = UIView()
+        
+        view.layer.cornerRadius = Constants.cornerRadius
+        
+        return view
+    }()
+    
     lazy var titleLabel: UILabel = {
         
-        let label = UILabel(frame: CGRect(x: 100, y: 200, width: 100, height: 50))
-        label.backgroundColor = .red
+        let label = UILabel()
         
-        contentView.addSubview(label)
+        label.backgroundColor = Constants.bgColorLabel
+        label.textAlignment = Constants.textAlignment
+        label.font = Constants.font
         
         return label
     }()
+    
+    lazy var descriptionText: UITextView = {
+        
+        let textView = UITextView()
+        
+        textView.backgroundColor = Constants.bgColorLabel
+        textView.textAlignment = Constants.textAlignment
+        textView.font = Constants.font
+        
+        return textView
+    }()
+    
+    lazy var stepLabel: UILabel = {
+        
+        let label = UILabel()
+        
+        label.backgroundColor = Constants.bgColorLabel
+        label.textAlignment = Constants.textAlignment
+        label.font = .systemFont(ofSize: 40)
+        
+        return label
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        contentView.backgroundColor = .systemBackground
+        backView.backgroundColor = .systemGray6
+        
+        setupView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupView() {
+        addSubviews()
+        setupConstraints()
+    }
+    
+    func addSubviews() {
+        addSubview(backView)
+        addSubview(titleLabel)
+        addSubview(descriptionText)
+        addSubview(stepLabel)
+    }
+    
+    func autoresizingMaskOff() {
+        backView.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        descriptionText.translatesAutoresizingMaskIntoConstraints = false
+        stepLabel.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func setupConstraints() {
+        
+        autoresizingMaskOff()
+        
+        NSLayoutConstraint.activate([
+            // MARK: backView constraints
+            backView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Constants.inset),
+            backView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Constants.inset),
+            backView.topAnchor.constraint(equalTo: self.topAnchor, constant: Constants.largeInset),
+            backView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -Constants.inset),
+            
+            // MARK: titleLabel constraints
+            titleLabel.leadingAnchor.constraint(equalTo: backView.leadingAnchor, constant: Constants.constraintDistance),
+            titleLabel.trailingAnchor.constraint(equalTo: backView.trailingAnchor, constant: -Constants.constraintDistance),
+            titleLabel.topAnchor.constraint(equalTo: backView.topAnchor, constant: Constants.constraintDistance),
+            //titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -Constants.constraintDistance),
+            
+            // MARK: descriptionText constraints
+            descriptionText.leadingAnchor.constraint(equalTo: backView.leadingAnchor, constant: Constants.constraintDistance),
+            descriptionText.trailingAnchor.constraint(equalTo: backView.trailingAnchor, constant: -Constants.constraintDistance),
+            descriptionText.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: Constants.constraintDistance),
+            //descriptionText.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -Constants.constraintDistance),
+            
+            // MARK: stepLabel constraints
+            stepLabel.leadingAnchor.constraint(equalTo: backView.leadingAnchor, constant: Constants.constraintDistance),
+            stepLabel.trailingAnchor.constraint(equalTo: backView.trailingAnchor, constant: -Constants.constraintDistance),
+            stepLabel.topAnchor.constraint(equalTo: descriptionText.bottomAnchor, constant: Constants.constraintDistance),
+            stepLabel.bottomAnchor.constraint(equalTo: backView.bottomAnchor, constant: -Constants.largeInset)
+        ])
+    }
 }
-
-/*
- import UIKit
-
- class FavoriteTableViewCell: UITableViewCell {
-     
-     static let idintifier = "UITableViewCell"
-     
-     lazy var idLabel: UILabel = {
-         
-         let label = UILabel()
-         //label.backgroundColor = Constant.labelColor
-         
-         contentView.addSubview(label)
-         
-         return label
-     }()
-     
-     lazy var nameLabel: UILabel = {
-         
-         let label = UILabel()
-         //label.backgroundColor = Constant.labelColor
-         
-         contentView.addSubview(label)
-         
-         return label
-     }()
-     
-     lazy var mmLabel: UILabel = {
-         
-         let label = UILabel()
-         //label.backgroundColor = Constant.labelColor
-         
-         contentView.addSubview(label)
-         
-         return label
-     }()
-     
-     static func setHeightForCell() -> CGFloat {
-         
-         return (Constant.constraintDistance + Constant.lableHeight) * 3
-     }
-     
-     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-         super.init(style: style, reuseIdentifier: reuseIdentifier)
-         
-         contentView.backgroundColor = .systemGray6
-         setConstraint()
-     }
-     
-     func setConstraint() {
-         
-         idLabel.translatesAutoresizingMaskIntoConstraints = false
-         nameLabel.translatesAutoresizingMaskIntoConstraints = false
-         mmLabel.translatesAutoresizingMaskIntoConstraints = false
-         
-         NSLayoutConstraint.activate([
-             // MARK: - idLabel
-             idLabel.topAnchor.constraint(
-                 equalTo: contentView.topAnchor,
-                 constant: Constant.constraintDistance
-             ),
-             idLabel.leadingAnchor.constraint(
-                 equalTo: contentView.leadingAnchor,
-                 constant: Constant.constraintDistance
-             ),
-             idLabel.trailingAnchor.constraint(
-                 lessThanOrEqualTo: contentView.trailingAnchor,
-                 constant: -Constant.constraintDistance
-             ),
-             idLabel.heightAnchor.constraint(
-                 equalToConstant: Constant.lableHeight
-             ),
-             
-             // MARK: - nameLabel
-             nameLabel.topAnchor.constraint(
-                 equalTo: idLabel.bottomAnchor,
-                 constant: Constant.constraintDistance
-             ),
-             nameLabel.leadingAnchor.constraint(
-                 equalTo: contentView.leadingAnchor,
-                 constant: Constant.constraintDistance
-             ),
-             nameLabel.trailingAnchor.constraint(
-                 lessThanOrEqualTo: contentView.trailingAnchor,
-                 constant: -Constant.constraintDistance
-             ),
-             nameLabel.heightAnchor.constraint(
-                 equalToConstant: Constant.lableHeight
-             ),
-             
-             // MARK: - mmLabel
-             mmLabel.topAnchor.constraint(
-                 equalTo: nameLabel.bottomAnchor,
-                 constant: Constant.zeroDistance
-             ),
-             mmLabel.leadingAnchor.constraint(
-                 equalTo: contentView.leadingAnchor,
-                 constant: Constant.constraintDistance
-             ),
-             mmLabel.trailingAnchor.constraint(
-                 lessThanOrEqualTo: contentView.trailingAnchor,
-                 constant: -Constant.constraintDistance
-             ),
-             mmLabel.heightAnchor.constraint(
-                 equalToConstant: Constant.lableHeight
-             )
-         ])
-     }
-     
-     required init?(coder: NSCoder) {
-         
-         fatalError("init(coder:) has not been implemented")
-     }
- }
-
- private class Constant {
-     
-     static let constraintDistance: CGFloat = 20
-     static let lableHeight: CGFloat = 30
-     static let zeroDistance: CGFloat = 0
-     
-     static let labelColor: UIColor = .systemRed
- }
- */

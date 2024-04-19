@@ -16,8 +16,8 @@ class DataLoader {
         for i in 1...5 {
             
             let newModel = FlowItems(
-                titleText: "Title",
-                descriptionText: "description",
+                titleText: "Title \(i)",
+                descriptionText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
                 step: i
             )
             
@@ -27,12 +27,19 @@ class DataLoader {
         return models
     }
     
-    func getMainData() -> [MainItem] {
+    func getMainData() -> [MainModel] {
         
-        var models: [MainItem] = []
+        var models: [MainModel] = []
         
         for i in 1...90 {
-            models.append(MainItem(num: i))
+            
+            let model = MainModel(
+                num: i,
+                rgb: (red: Int.random(in: 0...255), 
+                      green: Int.random(in: 0...255),
+                      blue: Int.random(in: 0...255)))
+            
+            models.append(model)
         }
         
         return models

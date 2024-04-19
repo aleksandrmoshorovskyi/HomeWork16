@@ -1,5 +1,5 @@
 //
-//  MainModel.swift
+//  OnboardingModel.swift
 //  HomeWork16
 //
 //  Created by Aleksandr Moroshovskyi on 17.04.2024.
@@ -7,21 +7,21 @@
 
 import Foundation
 
-protocol MainModelDelegate: AnyObject {
+protocol OnboardingModelDelegate: AnyObject {
     
     func dataDidLoad()
 }
 
-class MainModel: NSObject {
+class OnboardingModel {
     
-    weak var delegate: MainModelDelegate?
-    
+    weak var delegate: OnboardingModelDelegate?
+ 
     var dataLoader = DataLoader()
     
-    var items: [MainItem] = []
+    var items: [FlowItems] = []
     
     func loadData() {
-        items = dataLoader.getMainData()
+        items = dataLoader.getOnboardingFlowData()
         delegate?.dataDidLoad()
     }
 }

@@ -13,7 +13,7 @@ extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let detailsViewController = DetailsViewController()
-        detailsViewController.dataModel = model.items[indexPath.row]
+        detailsViewController.dataModel = dataModel[indexPath.row]
         
         if let nc = navigationController {
             nc.pushViewController(detailsViewController, animated: true)
@@ -25,8 +25,8 @@ extension MainViewController: UICollectionViewDelegate {
 extension MainViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return model.items.count
+
+        return dataModel.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -38,8 +38,10 @@ extension MainViewController: UICollectionViewDataSource {
             assertionFailure()
             return UICollectionViewCell()
         }
-        
-        cell.titleLabel.text = "\(model.items[indexPath.row].num)"
+
+        cell.titleLabel.text = "\(dataModel[indexPath.row].num)"
+        cell.backView.backgroundColor = UIColor.getColorFor(RGB: dataModel[indexPath.row].rgb)
+        cell.adaptForContent()
         
         return cell
     }

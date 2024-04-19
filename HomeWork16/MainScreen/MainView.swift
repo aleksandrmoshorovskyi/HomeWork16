@@ -20,8 +20,6 @@ class MainView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .lightGray
-        
         setupView()
     }
 
@@ -34,9 +32,9 @@ class MainView: UIView {
         // MARK: collectionView setup
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
+    
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        //collectionView.isPagingEnabled = true
-        collectionView.backgroundColor = .green
+        collectionView.backgroundColor = .systemBackground
         
         addSubviews()
         setupConstraints()
