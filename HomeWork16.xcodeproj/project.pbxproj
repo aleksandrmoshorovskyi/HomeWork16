@@ -83,6 +83,46 @@
 			path = MainDetailsScreens;
 			sourceTree = "<group>";
 		};
+		A80A272C2BD2B5B500DCB04E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF53932BD0331200A04F90 /* Constants.swift */,
+				A80A271F2BD2557C00DCB04E /* BaseViewController.swift */,
+				A80A27262BD25F4100DCB04E /* UIColor+Ext.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A80A272D2BD2B5E100DCB04E /* OnboardingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF538A2BD0180800A04F90 /* OnboardingModels */,
+				A80A272F2BD2B64E00DCB04E /* OnboardingCells */,
+				A8AF537F2BD0044200A04F90 /* OnboardingView.swift */,
+				A8AF537D2BD0027000A04F90 /* OnboardingViewController.swift */,
+				A80A27282BD278DA00DCB04E /* OnboardingViewController+Ext.swift */,
+				A8AF538D2BD026D700A04F90 /* OnboardingViewController+CollectionView.swift */,
+			);
+			name = OnboardingScreen;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A80A272F2BD2B64E00DCB04E /* OnboardingCells */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF53902BD0275D00A04F90 /* OnboardingCell.swift */,
+			);
+			path = OnboardingCells;
+			sourceTree = "<group>";
+		};
+		A80A27312BD2B6B900DCB04E /* MainCells */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF539D2BD0415900A04F90 /* MainCell.swift */,
+			);
+			path = MainCells;
+			sourceTree = "<group>";
+		};
 		A8AF535D2BD0013F00A04F90 = {
 			isa = PBXGroup;
 			children = (
@@ -104,28 +144,15 @@
 			children = (
 				A8AF53692BD0013F00A04F90 /* AppDelegate.swift */,
 				A8AF536B2BD0013F00A04F90 /* SceneDelegate.swift */,
-				A8AF53922BD032FC00A04F90 /* Common */,
+				A80A272C2BD2B5B500DCB04E /* Common */,
 				A8AF53862BD014EF00A04F90 /* Services */,
-				A8AF53852BD014D500A04F90 /* OnboardingScreen */,
+				A80A272D2BD2B5E100DCB04E /* OnboardingScreen */,
 				A8AF53952BD03E5800A04F90 /* MainScreen */,
 				A8AF53722BD0014000A04F90 /* Assets.xcassets */,
 				A8AF53742BD0014000A04F90 /* LaunchScreen.storyboard */,
 				A8AF53772BD0014000A04F90 /* Info.plist */,
 			);
 			path = HomeWork16;
-			sourceTree = "<group>";
-		};
-		A8AF53852BD014D500A04F90 /* OnboardingScreen */ = {
-			isa = PBXGroup;
-			children = (
-				A8AF538A2BD0180800A04F90 /* Models */,
-				A8AF538F2BD0273300A04F90 /* Cells */,
-				A8AF537F2BD0044200A04F90 /* OnboardingView.swift */,
-				A8AF537D2BD0027000A04F90 /* OnboardingViewController.swift */,
-				A80A27282BD278DA00DCB04E /* OnboardingViewController+Ext.swift */,
-				A8AF538D2BD026D700A04F90 /* OnboardingViewController+CollectionView.swift */,
-			);
-			name = OnboardingScreen;
 			sourceTree = "<group>";
 		};
 		A8AF53862BD014EF00A04F90 /* Services */ = {
@@ -136,38 +163,20 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		A8AF538A2BD0180800A04F90 /* Models */ = {
+		A8AF538A2BD0180800A04F90 /* OnboardingModels */ = {
 			isa = PBXGroup;
 			children = (
 				A8AF53812BD004E600A04F90 /* OnboardingModel.swift */,
 				A8AF538B2BD0185E00A04F90 /* FlowItems.swift */,
 			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		A8AF538F2BD0273300A04F90 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				A8AF53902BD0275D00A04F90 /* OnboardingCell.swift */,
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
-		A8AF53922BD032FC00A04F90 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				A8AF53932BD0331200A04F90 /* Constants.swift */,
-				A80A271F2BD2557C00DCB04E /* BaseViewController.swift */,
-				A80A27262BD25F4100DCB04E /* UIColor+Ext.swift */,
-			);
-			name = Common;
+			path = OnboardingModels;
 			sourceTree = "<group>";
 		};
 		A8AF53952BD03E5800A04F90 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
 				A8AF53A12BD0529600A04F90 /* MainModels */,
-				A8AF539C2BD0411600A04F90 /* MainCells */,
+				A80A27312BD2B6B900DCB04E /* MainCells */,
 				A80A27212BD259F300DCB04E /* MainDetailsScreens */,
 				A8AF53982BD03F5900A04F90 /* MainView.swift */,
 				A8AF539A2BD03FB600A04F90 /* MainViewController.swift */,
@@ -175,14 +184,6 @@
 				A8AF539F2BD041CA00A04F90 /* MainViewController+CollectionView.swift */,
 			);
 			path = MainScreen;
-			sourceTree = "<group>";
-		};
-		A8AF539C2BD0411600A04F90 /* MainCells */ = {
-			isa = PBXGroup;
-			children = (
-				A8AF539D2BD0415900A04F90 /* MainCell.swift */,
-			);
-			name = MainCells;
 			sourceTree = "<group>";
 		};
 		A8AF53A12BD0529600A04F90 /* MainModels */ = {
