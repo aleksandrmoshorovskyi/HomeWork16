@@ -93,20 +93,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		A80A272D2BD2B5E100DCB04E /* OnboardingScreen */ = {
-			isa = PBXGroup;
-			children = (
-				A8AF538A2BD0180800A04F90 /* OnboardingModels */,
-				A80A272F2BD2B64E00DCB04E /* OnboardingCells */,
-				A8AF537F2BD0044200A04F90 /* OnboardingView.swift */,
-				A8AF537D2BD0027000A04F90 /* OnboardingViewController.swift */,
-				A80A27282BD278DA00DCB04E /* OnboardingViewController+Ext.swift */,
-				A8AF538D2BD026D700A04F90 /* OnboardingViewController+CollectionView.swift */,
-			);
-			name = OnboardingScreen;
-			path = Services;
-			sourceTree = "<group>";
-		};
 		A80A272F2BD2B64E00DCB04E /* OnboardingCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +107,19 @@
 				A8AF539D2BD0415900A04F90 /* MainCell.swift */,
 			);
 			path = MainCells;
+			sourceTree = "<group>";
+		};
+		A80A27332BD2B79800DCB04E /* OnboardingFlowScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF538A2BD0180800A04F90 /* OnboardingModels */,
+				A80A272F2BD2B64E00DCB04E /* OnboardingCells */,
+				A8AF537F2BD0044200A04F90 /* OnboardingView.swift */,
+				A8AF537D2BD0027000A04F90 /* OnboardingViewController.swift */,
+				A80A27282BD278DA00DCB04E /* OnboardingViewController+Ext.swift */,
+				A8AF538D2BD026D700A04F90 /* OnboardingViewController+CollectionView.swift */,
+			);
+			path = OnboardingFlowScreen;
 			sourceTree = "<group>";
 		};
 		A8AF535D2BD0013F00A04F90 = {
@@ -146,7 +145,7 @@
 				A8AF536B2BD0013F00A04F90 /* SceneDelegate.swift */,
 				A80A272C2BD2B5B500DCB04E /* Common */,
 				A8AF53862BD014EF00A04F90 /* Services */,
-				A80A272D2BD2B5E100DCB04E /* OnboardingScreen */,
+				A80A27332BD2B79800DCB04E /* OnboardingFlowScreen */,
 				A8AF53952BD03E5800A04F90 /* MainScreen */,
 				A8AF53722BD0014000A04F90 /* Assets.xcassets */,
 				A8AF53742BD0014000A04F90 /* LaunchScreen.storyboard */,
