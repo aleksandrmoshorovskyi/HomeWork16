@@ -17,6 +17,8 @@ extension OnboardingViewController: UICollectionViewDelegate {
         contentView.pageControl.currentPage = scrollPosition.isNaN ? 0 : Int(round(scrollPosition))
         
         contentView.goButton.isHidden = (contentView.pageControl.currentPage != model.items.count - 1)
+        
+        contentView.adaptForContent()
     }
 }
 

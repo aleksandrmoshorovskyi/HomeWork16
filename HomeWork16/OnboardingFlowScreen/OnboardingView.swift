@@ -101,4 +101,12 @@ class OnboardingView: UIView {
             goButton.widthAnchor.constraint(equalToConstant: Constants.buttonWidth)
         ])
     }
+    
+    func adaptForContent() {
+        
+        if let backgroundColor = self.backgroundColor {
+            goButton.layer.borderColor = backgroundColor.isLight() ? UIColor.black.cgColor : UIColor.white.cgColor
+            goButton.setTitleColor(backgroundColor.isLight() ? .black : .white, for: .normal)
+        }
+    }
 }
